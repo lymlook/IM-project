@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="viewport"
+    content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <title>金讯-即时通讯</title>
+</head>
+<body >
+  <div id="app"></div>
+  <script type="text/javascript" src="./static/js/listener.js"></script>
+  <script>
+    //得到手机屏幕的宽度
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    //得到html的Dom元素
+    let htmlDom = document.getElementsByTagName('html')[0];
+    if (htmlWidth > 750) {
+      htmlWidth = 750;
+    }
+    //设置根元素字体大小
+    htmlDom.style.fontSize = htmlWidth / 20 + 'px';
+  </script>
+</body>
+</html>
